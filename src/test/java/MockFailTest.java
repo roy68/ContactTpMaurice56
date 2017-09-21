@@ -15,7 +15,7 @@ public class MockFailTest extends MockTest{
 	@Mock
 	private IContactDAO dao;
 	
-	@Test
+	@Test(expected=ContactException.class)
 	public void testCreeContactErr() throws ContactException{
 		
 		String nom = "ContactOK";
