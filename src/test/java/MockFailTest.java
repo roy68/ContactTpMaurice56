@@ -21,13 +21,11 @@ public class MockFailTest extends MockTest{
 		String nom = "ContactOK";
 		EasyMock.expect(dao.isContactExist(nom)).andReturn(true);
 		
-		Capture<Contact> capture = EasyMock.newCapture();
 		replayAll();
 		service.creeContact(nom,"0255887744");
 		verifyAll();
 		
-		Contact contact = capture.getValue();
-		Assert.assertEquals(nom,contact.getNom());
+
 	}
 	
 }
