@@ -1,8 +1,7 @@
-import org.easymock.Capture;
+
 import org.easymock.EasyMock;
 import org.easymock.Mock;
 import org.easymock.TestSubject;
-import org.junit.Assert;
 import org.junit.Test;
 
 
